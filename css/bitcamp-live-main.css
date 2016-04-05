@@ -92,9 +92,9 @@ footer .social-item { margin: 0 1.25em; }
 
 .copy { margin-bottom: 2em; }
 
-html, body { max-width: 100%; overflow-x: hidden; background-color: #CBF2FF; font-family: 'avenir'; text-align: center; }
+html, body { max-width: 100%; overflow-x: hidden; background-color: #CBF2FF; font-family: 'aleo'; text-align: center; }
 .sky { background-color: #CBF2FF; color: #FF6F3F; height: 600px; }
-
+th { font-family: 'avenir'; text-align: center}
 .date-text { margin-bottom: 15px; font-family: 'avenir'; z-index: 1; position: relative; }
 
 #logo-text { margin-bottom: 12px; z-index: 1; position: relative; }
@@ -130,7 +130,7 @@ html, body { max-width: 100%; overflow-x: hidden; background-color: #CBF2FF; fon
 .absolute-position-centered { margin: 3px auto; left: 0; right: 0; }
 
 #mc_embed_signup { z-index: 10000; font-family: 'avenir'; font-size: 16px; line-height: 16px; margin-top: 5px; }
-#mc_embed_signup .text-field { border: none; background-color: #FFFFFF; padding-right: 0; padding-left: 0; font-weight: 300; text-transform: none; font-family: 'aleo'; margin-right: 8px; cursor: text; position: relative; top: 3px; margin-top: 1px; color: #000000; }
+#mc_embed_signup .text-field { border: none; background-color: #FFFFFF; padding-right: 0; padding-left: 0; font-weight: 300; text-transform: none; font-family: 'avenir'; margin-right: 8px; cursor: text; position: relative; top: 3px; margin-top: 1px; color: #000000; }
 #mc_embed_signup .mailchimp-form-container { display: inline-block; }
 
 .table-title { text-align: center; padding-top: 50px; }

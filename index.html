@@ -63,9 +63,9 @@
                 <div class="col-md-8">
                     <table id="schedule-head" >
                         <tr>
-                            <th style="text-align:center;">Event</th>
-                           <th style="text-align:center;">Location</th>
-                            <th style="text-align:center;">Time</th>
+                            <th>Event</th>
+                            <th>Location</th>
+                            <th>Time</th>
                         </tr>
                     </table>
                     <div id="schedule-wrapper">
@@ -74,17 +74,17 @@
                             <tr ng-class="status(event)" ng-repeat=
                             "event in events | orderBy: '-start'">
                                 <td>
-                                    <div>
+                                    <div class="event-text">
                                         {{event.title}}
                                     </div>
                                 </td>
                                 <td>
-                                    <div>
+                                    <div class="event-text">
                                         {{event.location}}
                                     </div>
                                 </td>
                                 <td>
-                                    <div>
+                                    <div class="event-text">
                                         <span>{{event.start | date: 'EEEE
                                         '}}</span><span style=
                                         "white-space: nowrap"> {{event.start |
