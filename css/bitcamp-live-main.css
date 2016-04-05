@@ -94,7 +94,8 @@ footer .social-item { margin: 0 1.25em; }
 
 html, body { max-width: 100%; overflow-x: hidden; background-color: #CBF2FF; font-family: 'aleo'; text-align: center; }
 .sky { background-color: #CBF2FF; color: #FF6F3F; height: 600px; }
-th { font-family: 'avenir'; text-align: center}
+
+
 .date-text { margin-bottom: 15px; font-family: 'avenir'; z-index: 1; position: relative; }
 
 #logo-text { margin-bottom: 12px; z-index: 1; position: relative; }
