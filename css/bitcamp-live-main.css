@@ -43,10 +43,10 @@ html { box-sizing: border-box; }
 
 *, *:before, *:after { box-sizing: inherit; }
 
-@font-face { font-family: "Aleo"; font-style: normal; font-weight: 400; src: url("https://github.com/bitcamp/bitcamp.github.io/fonts/Aleo/Aleo-Regular.eot?#iefix") format("embedded-opentype"), url("https://github.com/bitcamp/bitcamp.github.io/fonts/Aleo/Aleo-Regular.woff2") format("woff2"), url("https://github.com/bitcamp/bitcamp.github.io/fonts/Aleo/Aleo-Regular.woff") format("woff"), url("https://github.com/bitcamp/bitcamp.github.io/fonts/Aleo/Aleo-Regular.ttf") format("truetype"), url("https://github.com/bitcamp/bitcamp.github.io/fonts/Aleo/Aleo-Regular.svg#Aleo") format("svg"); }
-@font-face { font-family: "Aleo"; font-style: normal; font-weight: 700; src: url("https://github.com/bitcamp/bitcamp.github.io/fonts/Aleo/Aleo-Bold.eot?#iefix") format("embedded-opentype"), url("https://github.com/bitcamp/bitcamp.github.io/fonts/Aleo/Aleo-Bold.woff2") format("woff2"), url("https://github.com/bitcamp/bitcamp.github.io/fonts/Aleo/Aleo-Bold.woff") format("woff"), url("https://github.com/bitcamp/bitcamp.github.io/fonts/Aleo/Aleo-Bold.ttf") format("truetype"), url("/fonts/Aleo/Aleo-Bold.svg#Aleo") format("svg"); }
-@font-face { font-family: "Avenir"; font-style: normal; font-weight: 400; src: url("https://github.com/bitcamp/bitcamp.github.io/fonts/Avenir/Avenir-Regular.eot?#iefix") format("embedded-opentype"), url("https://github.com/bitcamp/bitcamp.github.io/fonts/Avenir/Avenir-Regular.woff2") format("woff2"), url("/fonts/Avenir/Avenir-Regular.woff") format("woff"), url("https://github.com/bitcamp/bitcamp.github.io/fonts/Avenir/Avenir-Regular.ttf") format("truetype"), url("https://github.com/bitcamp/bitcamp.github.io/fonts/Avenir/Avenir-Regular.svg#Avenir") format("svg"); }
-@font-face { font-family: "Avenir"; font-style: normal; font-weight: 700; src: url("https://github.com/bitcamp/bitcamp.github.io/fonts/Avenir/Avenir-Bold.eot?#iefix") format("embedded-opentype"), url("https://github.com/bitcamp/bitcamp.github.io/fonts/Avenir/Avenir-Bold.woff2") format("woff2"), url("https://github.com/bitcamp/bitcamp.github.io/fonts/Avenir/Avenir-Bold.woff") format("woff"), url("https://github.com/bitcamp/bitcamp.github.io/fonts/Avenir/Avenir-Bold.ttf") format("truetype"), url("https://github.com/bitcamp/bitcamp.github.io/fonts/Avenir/Avenir-Bold.svg#Avenir") format("svg"); }
+@font-face { font-family: "Aleo"; font-style: normal; font-weight: 400; src: url("http://bitca.mp/fonts/Aleo/Aleo-Regular.eot?#iefix") format("embedded-opentype"), url("http://bitca.mp/fonts/Aleo/Aleo-Regular.woff2") format("woff2"), url("http://bitca.mp/fonts/Aleo/Aleo-Regular.woff") format("woff"), url("http://bitca.mp/fonts/Aleo/Aleo-Regular.ttf") format("truetype"), url("http://bitca.mp/fonts/Aleo/Aleo-Regular.svg#Aleo") format("svg"); }
+@font-face { font-family: "Aleo"; font-style: normal; font-weight: 700; src: url("http://bitca.mp/fonts/Aleo/Aleo-Bold.eot?#iefix") format("embedded-opentype"), url("http://bitca.mp/fonts/Aleo/Aleo-Bold.woff2") format("woff2"), url("http://bitca.mp/fonts/Aleo/Aleo-Bold.woff") format("woff"), url("http://bitca.mp/fonts/Aleo/Aleo-Bold.ttf") format("truetype"), url("http://bitca.mp/fonts/Aleo/Aleo-Bold.svg#Aleo") format("svg"); }
+@font-face { font-family: "Avenir"; font-style: normal; font-weight: 400; src: url("http://bitca.mp/fonts/Avenir/Avenir-Regular.eot?#iefix") format("embedded-opentype"), url("http://bitca.mp/fonts/Avenir/Avenir-Regular.woff2") format("woff2"), url("http://bitca.mp/fonts/Avenir/Avenir-Regular.woff") format("woff"), url("http://bitca.mp/fonts/Avenir/Avenir-Regular.ttf") format("truetype"), url("http://bitca.mp/fonts/Avenir/Avenir-Regular.svg#Avenir") format("svg"); }
+@font-face { font-family: "Avenir"; font-style: normal; font-weight: 700; src: url("http://bitca.mp/fonts/Avenir/Avenir-Bold.eot?#iefix") format("embedded-opentype"), url("http://bitca.mp/fonts/Avenir/Avenir-Bold.woff2") format("woff2"), url("http://bitca.mp/fonts/Avenir/Avenir-Bold.woff") format("woff"), url("http://bitca.mp/fonts/Avenir/Avenir-Bold.ttf") format("truetype"), url("http://bitca.mp/fonts/Avenir/Avenir-Bold.svg#Avenir") format("svg"); }
 body { font-family: "Avenir", Georgia, Serif; font-weight: 400; font-size: 16px; }
 @media screen and (min-width: 720px) { body { font-size: 18px; } }
 @media screen and (min-width: 60em) { body { font-size: 21px; } }
@@ -92,9 +92,9 @@ footer .social-item { margin: 0 1.25em; }
 
 .copy { margin-bottom: 2em; }
 
-html, body { max-width: 100%; overflow-x: hidden; background-color: #CBF2FF; font-family: 'avenir'; text-align: center; }
-.MediaCard-mediaContainer {padding-bottom: 0.0%; }
+html, body { max-width: 100%; overflow-x: hidden; background-color: #CBF2FF; font-family: 'aleo'; text-align: center; }
 .sky { background-color: #CBF2FF; color: #FF6F3F; height: 600px; }
+
 
 .date-text { margin-bottom: 15px; font-family: 'avenir'; z-index: 1; position: relative; }
 
@@ -131,7 +131,7 @@ html, body { max-width: 100%; overflow-x: hidden; background-color: #CBF2FF; fon
 .absolute-position-centered { margin: 3px auto; left: 0; right: 0; }
 
 #mc_embed_signup { z-index: 10000; font-family: 'avenir'; font-size: 16px; line-height: 16px; margin-top: 5px; }
-#mc_embed_signup .text-field { border: none; background-color: #FFFFFF; padding-right: 0; padding-left: 0; font-weight: 300; text-transform: none; font-family: 'aleo'; margin-right: 8px; cursor: text; position: relative; top: 3px; margin-top: 1px; color: #000000; }
+#mc_embed_signup .text-field { border: none; background-color: #FFFFFF; padding-right: 0; padding-left: 0; font-weight: 300; text-transform: none; font-family: 'avenir'; margin-right: 8px; cursor: text; position: relative; top: 3px; margin-top: 1px; color: #000000; }
 #mc_embed_signup .mailchimp-form-container { display: inline-block; }
 
 .table-title { text-align: center; padding-top: 50px; }
@@ -239,6 +239,8 @@ html, body { max-width: 100%; overflow-x: hidden; background-color: #CBF2FF; fon
 @media screen and (max-width: 719px) and (max-width: 719px) { .row-sponsors { max-width: 100%; } }
 .row-sponsors > li img { width: 100%; display: inline-block; vertical-align: middle; }
 
+
+
 .row-sponsors { padding: 30px 0; }
 
 .col-xlarge, .col-large, .col-med, .col-small, .col-tiny:before { content: ' '; display: inline-block; vertical-align: middle; height: 100%; }
@@ -262,3 +264,5 @@ html, body { max-width: 100%; overflow-x: hidden; background-color: #CBF2FF; fon
 #SGA { width: 75%; }
 
 #TerrapinHackers { width: 70%; }
+#media-container {padding-top: 5px;}
+#logo-container {padding-top: 25px; padding-bottom: 25px;}
