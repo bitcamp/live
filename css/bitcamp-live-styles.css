@@ -11,37 +11,6 @@ body {
     padding: 20px 15px;
   }
 }
-#navbar {
-  min-height: 65px;
-}
-
-.nav-slider {
-  display: none;
-}
-
-.nav-brand:after {
-  content: 'live.bitca.mp';
-  display: block;
-  position: relative;
-  bottom: 0px;
-  font-size: 16px;
-  text-align: center;
-}
-
-.bitcamp-nav ul.nav-links {
-  flex-direction: row-reverse;
-  justify-content: initial;
-}
-
-.bitcamp-nav.fixed ul.nav-links > li > a {
-  font-size: 14px;
-  margin-top: 0px;
-  text-align: center;
-}
-
-#navbar {
-  position: relative;
-}
 
 @media (min-width: 1600px) {
   .col-xl-1 {
@@ -113,19 +82,7 @@ body {
   text-align: center;
 }
 
-#twitter-title::before {
-  font-family: 'avenir';
-  display: block;
-  content: "Announcements";
-  background-color: #ff7040;
-  color: white;
-  text-align: center;
-  height: 42px;
-  padding: 10px 20px;
-  font-size: 1.5pc;
-  font-weight: 700;
-  box-sizing: border-box;
-}
+
 
 #schedule, #bitcamp-twitter {
   transform: scale(1, -1);
@@ -276,13 +233,9 @@ body {
 
 #schedule-head th {
   text-align: center;
-  font-family: 'avenir';
+  font-family: 'avenir' !important;
 }
 
-.event-text {
- font-family: 'aleo';
- text-align: center;
-}
 #announcements-wrapper, #schedule-wrapper {
   overflow: auto;
   overflow-x: hidden;
