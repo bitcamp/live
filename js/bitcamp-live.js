@@ -39,7 +39,7 @@ script = document.createElement('SCRIPT');
 		 
 		var url = mediaInfo.match(/data-srcset=.+alt=.+"/)	
 	        if(url) {
-			var newSrc = url[0].match(/+(https.+small).+\b/)
+			var newSrc = url[0].match(/.+(https.+small).+\b/)
 			mediaInfo =  mediaInfo.replace(/<a(\s|\w|=|\"|:|\/|\.|-|>|<)*<\/a>$/gm,'');
 			
 		realMedia = stripGarbage(mediaInfo.replace(url, "src=\"" + decodeURIComponent(newSrc[1]) + "\" title=\"View image on Twitter\""));
