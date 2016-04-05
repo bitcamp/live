@@ -46,14 +46,14 @@
                                         "tweet.authorAvatar | sanitize"></span>
                                         <strong class="fullname"><a href=
                                         "{{tweet.authorURL}}">{{tweet.authorFullName}}</a></strong><span class="username">@{{tweet.author}}</span><br>
-                                        <div>
+                                        <div id="media-container">
 
-                                        <div class="media" ng-bind-html="trustMedia(tweet.media)"></div>
-                                        <div class="content" ng-bind-html=
-                                        "tweet.content | sanitize"> </div>
-                                        <div class="time">
+                                            <div class="media" ng-bind-html="trustMedia(tweet.media)"></div>
+                                            <div class="content" ng-bind-html=
+                                            "tweet.content | sanitize"> </div>
+                                            <div class="time">
                                             {{ timeDiff(tweet) }}
-                                        </div>
+                                            </div>
                                     </div>
                                 </td>
                             </tr>

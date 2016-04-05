@@ -93,7 +93,6 @@ footer .social-item { margin: 0 1.25em; }
 .copy { margin-bottom: 2em; }
 
 html, body { max-width: 100%; overflow-x: hidden; background-color: #CBF2FF; font-family: 'avenir'; text-align: center; }
-.MediaCard-mediaContainer {padding-bottom: 0.0%; padding-top: 25% }
 .sky { background-color: #CBF2FF; color: #FF6F3F; height: 600px; }
 
 .date-text { margin-bottom: 15px; font-family: 'avenir'; z-index: 1; position: relative; }
@@ -239,6 +238,8 @@ html, body { max-width: 100%; overflow-x: hidden; background-color: #CBF2FF; fon
 @media screen and (max-width: 719px) and (max-width: 719px) { .row-sponsors { max-width: 100%; } }
 .row-sponsors > li img { width: 100%; display: inline-block; vertical-align: middle; }
 
+
+
 .row-sponsors { padding: 30px 0; }
 
 .col-xlarge, .col-large, .col-med, .col-small, .col-tiny:before { content: ' '; display: inline-block; vertical-align: middle; height: 100%; }
@@ -262,3 +263,5 @@ html, body { max-width: 100%; overflow-x: hidden; background-color: #CBF2FF; fon
 #SGA { width: 75%; }
 
 #TerrapinHackers { width: 70%; }
+
+#media-container {padding-bottom: 10%}
