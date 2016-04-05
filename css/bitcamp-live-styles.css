@@ -115,6 +115,7 @@ body {
 #twitter-title::before {
   display: block;
   content: 'Announcements';
+  font-family: 'avenir';
   background-color: #ff7040;
   color: white;
   text-align: center;
