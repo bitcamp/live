@@ -113,10 +113,9 @@ body {
 }
 
 #twitter-title::before {
-   font-family: 'avenir';
+  font-family: 'avenir';
   display: block;
   content: "Announcements";
- 
   background-color: #ff7040;
   color: white;
   text-align: center;
