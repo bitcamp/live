@@ -93,7 +93,7 @@ footer .social-item { margin: 0 1.25em; }
 .copy { margin-bottom: 2em; }
 
 html, body { max-width: 100%; overflow-x: hidden; background-color: #CBF2FF; font-family: 'avenir'; text-align: center; }
-.MediaCard-mediaContainer {padding-bottom: 0.0%; }
+.MediaCard-mediaContainer {padding-bottom: 0.0%; padding-top: 10% }
 .sky { background-color: #CBF2FF; color: #FF6F3F; height: 600px; }
 
 .date-text { margin-bottom: 15px; font-family: 'avenir'; z-index: 1; position: relative; }
