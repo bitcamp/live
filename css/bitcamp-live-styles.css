@@ -97,11 +97,11 @@ body {
 }
 
 #schedule tr.ongoing {
-  background-color: #ff7040;
+  background-color: #CBF2FF;
   color: white;
 }
 #schedule tr.ongoing:nth-child(odd) {
-  background-color: #ff7040
+  background-color: #CBF2FF;
 }
 #schedule tr.expiring td {
   padding-top: 0px
