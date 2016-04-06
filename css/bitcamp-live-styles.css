@@ -96,12 +96,12 @@ body {
   word-break: break-word;
 }
 
-#schedule tr.ongoing {
-  background-color: #CBF2FF;
+/*#schedule tr.ongoing {
+  background-color: #E5D8CE ;
   color: white;
 }
 #schedule tr.ongoing:nth-child(odd) {
-  background-color: #CBF2FF;
+  background-color: #7F6C5F;
 }
 #schedule tr.expiring td {
   padding-top: 0px
@@ -113,7 +113,7 @@ body {
 }
 #schedule tr.expired {
   display: none;
-}
+} */
 
 /*
 #announcements, #pennapps-twitter {
