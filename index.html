@@ -39,7 +39,7 @@
                         "TweetsController as tweets" ng-init="init()" style=
                         "display: none">
                             <tr ng-class="isIn(tweet)" ng-repeat=
-                            "tweet in tweets | orderBy: 'time'">
+                            "tweet in tweets | orderBy: '-time'">
                                 <td>
                                     <div>
                                         <span class="avatar" ng-bind-html=
@@ -72,7 +72,7 @@
                         <table id="schedule" ng-controller=
                         "ScheduleController as schedule" style="display: none">
                             <tr ng-class="status(event)" ng-repeat=
-                            "event in events | orderBy: '-start'">
+                            "event in events | orderBy: 'start'">
                                 <td>
                                     <div class="event-text">
                                         {{event.title}}

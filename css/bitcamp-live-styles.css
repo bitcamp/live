@@ -82,18 +82,6 @@ body {
   text-align: center;
 }
 
-
-
-#schedule, #bitcamp-twitter {
-  transform: scale(1, -1);
-  -webkit-transform: scale(1, -1);
-}
-#schedule tr, #bitcamp-twitter tr {
-  transform: scale(1, -1);
-  -webkit-transform: scale(1, -1);
-  transition: ease all 500ms;
-  -webkit-transition: ease all 500ms;
-}
 #schedule tr td, #bitcamp-twitter tr td {
   transition: ease padding 300ms;
   -webkit-transition: ease padding 300ms;
