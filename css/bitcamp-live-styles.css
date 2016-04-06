@@ -224,6 +224,19 @@ body {
   font-family: 'avenir' !important;
 }
 
+#twitter-title {
+  display: block;
+  font-family: 'avenir' !important;
+  background-color: #ff7040;
+  color: white;
+  text-align: center;
+  height: 42px;
+  padding: 10px 20px;
+  font-size: 1.5pc;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
 #announcements-wrapper, #schedule-wrapper {
   overflow: auto;
   overflow-x: hidden;

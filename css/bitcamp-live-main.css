@@ -100,19 +100,6 @@ html, body { max-width: 100%; overflow-x: hidden; background-color: #CBF2FF; fon
  text-align: center;
 }
 
-#twitter-title {
-  display: block;
-  font-family: 'avenir' !important;
-  background-color: #ff7040;
-  color: white;
-  text-align: center;
-  height: 42px;
-  padding: 10px 20px;
-  font-size: 1.5pc;
-  font-weight: 700;
-  box-sizing: border-box;
-}
-
 .sky { background-color: #CBF2FF; color: #FF6F3F; height: 600px; }
 
 .date-text { margin-bottom: 15px; font-family: 'avenir'; z-index: 1; position: relative; }
