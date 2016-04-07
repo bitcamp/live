@@ -96,15 +96,18 @@ body {
   word-break: break-word;
 }
 
-/*#schedule tr.ongoing {
-  background-color: #E5D8CE ;
-  color: white;
+#schedule tr.ongoing, tr.ongoing span{
+  background-color: #A58D7C;
+  color: white !important;
+  font-weight: bold;
 }
-#schedule tr.ongoing:nth-child(odd) {
+#schedule tr.ongoing:nth-child(odd), tr.ongoing:nth-child(odd) span {
   background-color: #7F6C5F;
+  color: white !important;
+    font-weight: bold;
 }
 #schedule tr.expiring td {
-  padding-top: 0px
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 #schedule tr.expiring td div {
@@ -113,7 +116,7 @@ body {
 }
 #schedule tr.expired {
   display: none;
-} */
+} 
 
 /*
 #announcements, #pennapps-twitter {
