@@ -26,27 +26,53 @@ script = document.createElement('SCRIPT');
   return function (cb) {
     window.__twitterCB = function(data) {
       script.parentNode.removeChild(script);
-
-      var mediaInfo, avatar, realMedia, authorInfo, authorHTML, avatarHTML, result, tweet, tweetElement, tweets, _i, _len, _ref;
+      var mediaInfo, avatar, authorInfo, authorHTML, avatarHTML, result, tweet, tweetElement, tweets, _i, _len, _ref;
       result = document.createElement('div');
       result.innerHTML = data.body;
       tweets = [];
       _ref = result.getElementsByClassName('timeline-Tweet');
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+          var realMedia = "";
         tweetElement = _ref[_i];
 	if (tweetElement.getElementsByClassName('timeline-Tweet-media')[0]) {
 		mediaInfo = tweetElement.getElementsByClassName('timeline-Tweet-media')[0].innerHTML;
-		 
-		var url = mediaInfo.match(/data-srcset=.+alt=.+"/)	
+        var str = mediaInfo.replace(/\s/g, "");
+        var images = str.match(/.+(?:600w,)?(https.+small).+600w,(https.+small)/);
+        console.log(images);
+        if (images) {
+            for(var i = 1; i < images.length; i++) {
+             realMedia = mediaInfo.replace(mediaInfo, "<img src=\"" + decodeURIComponent(images[i]) 
+                                                + "\" title=\"View image on Twitter\"");
+            }
+        } else {
+		url = mediaInfo.match(/(data-srcset=.*w.+")/g);
+        console.log(url);
 	        if(url) {
-			var newSrc = url[0].match(/.+(https.+small).+/)
-			mediaInfo =  mediaInfo.replace(/<a(\s|\w|=|\"|:|\/|\.|-|>|<)*<\/a>$/gm,'');
-			
-		realMedia = stripGarbage(mediaInfo.replace(url, "src=\"" + decodeURIComponent(newSrc[1]) + "\" title=\"View image on Twitter\""));
-		} else realMedia = stripGarbage(mediaInfo);
-
-		} else 
-		realMedia = "";
+                for(var i = 0; i < url.length; i++) {
+                    console.log(url[i]);
+                     realMedia = stripGarbage(mediaInfo.replace(url[i],  "<img src=\"" + 
+                                                decodeURIComponent(url[i].match(/.+(https.+small).+/)[1])
+                                                + "\" title=\"View image on Twitter\""));
+                    console.log("Real Media: " + realMedia);
+                  //var urls = url[i].split(",");
+                    // console.log(urls);
+			     var newSrc = url[i].match(/.+(https.+small).+/)
+                 //console.log(newSrc);
+			      mediaInfo =  mediaInfo.replace(/<a(\s|\w|=|\"|:|\/|\.|-|>|<)*<\/a>$/gm,'');
+                    //console.log("After replace: " + mediaInfo);
+		          realMedia = stripGarbage(mediaInfo.replace(newSrc[0], "src=\"" + decodeURIComponent(newSrc[1]) 
+                                                   + "\" title=\"View image on Twitter\""));
+                    //console.log("After Strip: "+realMedia);
+                }
+            }
+            else {
+                realMedia = stripGarbage(mediaInfo);
+            }
+        }
+    }  else {
+		  realMedia = "";
+        }  
+        
         tweet = {
           id: tweetElement.getAttribute('data-tweet-id'),
           isRetweet: 0 < tweetElement.getElementsByClassName('timeline-Tweet-retweetCredit').length,
