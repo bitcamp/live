@@ -149,15 +149,15 @@ body {
   word-break: break-word;
 }
 
-#schedule tr.ongoing {
+/*#schedule tr.ongoing {
   background-color: #ff7040;
   color: white;
 }
 #schedule tr.ongoing:nth-child(odd) {
   background-color: #ff7040
-}
+}*/
 #schedule tr.expiring td {
-  padding-top: 0px
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 #schedule tr.expiring td div {
